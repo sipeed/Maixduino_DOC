@@ -34,6 +34,8 @@ Select `Tools` -> `Board` -> `Boards Manager`， search `Maixduino`, click `Inst
 
 ![](../../assets/arduino_board.png)
 
+![](../../assets/maixduino_install.png)
+
 
 ### 4. Change settings about board
 
@@ -102,6 +104,8 @@ Add `Additional Boards Manager URLs`:
 Select `Tools` -> `Board` -> `Boards Manager`， search `Maixduino`, click `Install`
 
 ![](../../assets/arduino_board.png)
+
+![](../../assets/maixduino_install.png)
 
 
 ### 4. Change settings about board
