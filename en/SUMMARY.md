@@ -25,6 +25,17 @@ Summary
 - [Install](get_started/install.md)
 
 
+## Libraries
+
+- [Camera](libs/camera.md)
+- [Maix_KPU](libs/maix_kpu.md)
+- [WiFiEsp](libs/wifiesp.md)
+- [Wire](libs/wire.md)
+- [SD](libs/sd.md)
+- [Sipeed_OV2640](libs/sipeed_ov2640.md)
+- [Sipeed_ST7789](libs/sipeed_st7789.md)
+- [SPI](libs/spi.md)
+
 
 
 
