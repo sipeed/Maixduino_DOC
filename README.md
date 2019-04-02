@@ -5,6 +5,13 @@ Arduino port for Maix series board( k210 )
 
 
 
+|[Read me online](https://maixduino.sipeed.com/en/)  | [在线阅读](https://maixduino.sipeed.com/zh/) |
+| ------------------------ | ----------- |
+
+[![Build Status](https://travis-ci.org/sipeed/Maixduino_DOC.svg?branch=master)](https://travis-ci.org/sipeed/Maixduino_DOC)
+
+
+
 
 
 ## Build Doc
