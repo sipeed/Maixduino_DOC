@@ -24,6 +24,14 @@ Summary
 - [Get Hardware](get_started/get_hardware.md)
 - [Install](get_started/install.md)
 
+## Base Functions
+- [Digital I/O](cores/digital.md)
+- [Analog I/O](cores/analog.md)
+- [Advanced I/O](cores/advanced.md)
+- [Time](cores/time.md)
+- [Interrupts](cores/interrupts.md)
+- [Serial](cores/serial.md)
+- [Constants](cores/constants.md)
 
 ## Libraries
 
