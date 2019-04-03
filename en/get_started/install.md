@@ -12,7 +12,7 @@ Install Arduino Environment
 Ubuntu for example:
 
 ```shell
-sudo usermode -a -G dialout $(whoami)
+sudo usermod -a -G dialout $(whoami)
 sudo apt install python3 python3-pip
 sudo pip3 install pyserial
 ```
