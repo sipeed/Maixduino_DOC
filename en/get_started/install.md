@@ -24,13 +24,19 @@ sudo pip3 install pyserial
 Open Arduino IDE, select `File` -> `Preferences`, 
 
 Add `Additional Boards Manager URLs`: 
+
 `http://dl.sipeed.com/MAIX/Maixduino/package_Maixduino_k210_index.json`
+
+or 
+
+`http://dl.sipeed.com/MAIX/Maixduino/package_Maixduino_k210_dl_cdn_index.json` (if download speed too low, try this URL)
+
 
 ![](../../assets/arduino_settings.png)
 
 * Install board tools and libs
 
-Select `Tools` -> `Board` -> `Boards Manager`， search `Maixduino`, click `Install`
+Select `Tools` -> `Board` -> `Boards Manager`， search `Maixduino`, select latest version, click `Install`
 
 ![](../../assets/arduino_board.png)
 
@@ -65,7 +71,7 @@ Then double click pack to install
 
 ### 2. Install dependence 
 
-* Download [.Net Core Runtime](https://download.visualstudio.microsoft.com/download/pr/3f05ee2d-5372-43d6-9562-be86632a53d4/1361281426efa7ff206289adb0411f55/dotnet-runtime-3.0.0-preview3-27503-5-win-x64.exe) (required by burn tool [k-flash for windows](https://github.com/kendryte/kendryte-flash-windows) )
+(We will remove this step in the future~ but now we have to do this step!)
 
 * Add toolchain path to global environment path:
 
@@ -95,7 +101,13 @@ Open search tool, type in `env`, and choose `Edit the system environment variabl
 Open Arduino IDE, select `File` -> `Preferences`, 
 
 Add `Additional Boards Manager URLs`: 
+
 `http://dl.sipeed.com/MAIX/Maixduino/package_Maixduino_k210_index.json`
+
+or 
+
+`http://dl.sipeed.com/MAIX/Maixduino/package_Maixduino_k210_dl_cdn_index.json` (if download speed too low, try this URL)
+
 
 ![](../../assets/arduino_settings.png)
 
