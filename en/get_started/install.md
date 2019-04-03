@@ -102,11 +102,11 @@ Open Arduino IDE, select `File` -> `Preferences`,
 
 Add `Additional Boards Manager URLs`: 
 
-`http://dl.sipeed.com/MAIX/Maixduino/package_Maixduino_k210_index.json`
+`http://dl.sipeed.com/MAIX/Maixduino/package_Maixduino_k210_index.json` (Recommend)
 
 or 
 
-`http://dl.sipeed.com/MAIX/Maixduino/package_Maixduino_k210_dl_cdn_index.json` (if download speed too low, try this URL)
+`http://dl.sipeed.com/MAIX/Maixduino/package_Maixduino_k210_dl_cdn_index.json` ( if download fail or speed too low, try this URL)
 
 
 ![](../../assets/arduino_settings.png)
