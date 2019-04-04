@@ -12,10 +12,13 @@ Install Arduino Environment
 Ubuntu for example:
 
 ```shell
-sudo usermode -a -G dialout $(whoami)
+sudo usermod -a -G dialout $(whoami)
 sudo apt install python3 python3-pip
 sudo pip3 install pyserial
 ```
+
+And you need to **logout** or **reboot** after set user to dialout group, or it won't takes effect!
+
 
 ### 3. Add board in Arduino IDE
 
