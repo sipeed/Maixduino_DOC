@@ -6,6 +6,7 @@ Maixduino supports basic arduino input and output functions, you can use them li
 
 In Maixduino, you can configure up to 32 pins into any digital IO in any of the 48 FPIOs.
 
+-----
 ## digitalRead()
 
 ### Description
@@ -28,6 +29,7 @@ Reads the value from a specified digital pin, either `HIGH` or `LOW` .
 
 Only pins that are set to the input function by the `pinMode()` can be read.
 
+-----
 ## digitalWrite()
 
 ### Description
@@ -52,6 +54,7 @@ Nothing
 
 Only pins that are set to the output function by the `pinMode()` can be write.
 
+-----
 ## pinMode()
 
 ### Description
