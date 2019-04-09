@@ -3,11 +3,11 @@ Install Arduino Environment
 
 ## Linux
 
-### 1. Download Arduino IDE
+### Download Arduino IDE
 
 The Arduino IDE can be found on the [official download page](https://www.arduino.cc/en/Main/Software)
 
-### 2. Install dependencies
+### Install dependencies
 
 For Ubuntu, enter the following commands in a terminal:
 
@@ -18,9 +18,7 @@ sudo pip3 install pyserial
 ```
 
 Note that after setting the dialout group you need to **logout** or **reboot** , else the new settings won't take effect!
-
-
-### 3. Add board in Arduino IDE
+### Add board in Arduino IDE
 
 * Add URLs
 
@@ -46,7 +44,7 @@ Select `Tools` -> `Board` -> `Boards Manager`， search for `Maixduino`, select 
 ![](../../assets/maixduino_install.png)
 
 
-### 4. Change settings about board
+### Change settings about board
 
 Change board settings in `Tools`  section on the top of Arduini IDE.
 
@@ -54,7 +52,7 @@ Change board settings in `Tools`  section on the top of Arduini IDE.
 * `Burn Tool Firmware`: just for Maix Go Board, default `open-ec`
 * `Burn Baudrate`: Decrease the baudrate if the download fails
 * `Port`: Serial port, e.g. `/dev/ttyUSB0`
-* `Programmer`: Burn tool, you must select `k-flash`
+* **`Programmer`**: Burn tool, you **MUST** select **`k-flash`**
 
 ![](../../assets/arduino_board.png)
 
@@ -66,13 +64,13 @@ Change board settings in `Tools`  section on the top of Arduini IDE.
 
 
 
-### 1. Download Arduino IDE
+### Download Arduino IDE
 
 [official download page](https://www.arduino.cc/en/Main/Software)
 
 Then double click pack to install
 
-### 2. Install dependence 
+### Install dependence 
 
 (We will remove this step in the future~ but now we have to do this step!)
 
@@ -97,7 +95,7 @@ Open search tool, type in `env`, and choose `Edit the system environment variabl
 
 ![](../../assets/win10_add_env_path.png)
 
-### 3. Add board in Arduino IDE
+### Add board in Arduino IDE
 
 * Add URLs
 
@@ -123,7 +121,7 @@ Select `Tools` -> `Board` -> `Boards Manager`， search `Maixduino`, click `Inst
 ![](../../assets/maixduino_install.png)
 
 
-### 4. Change settings about board
+### Change settings about board
 
 Change board settings in `Tools`  section on the top of Arduini IDE.
 
@@ -131,7 +129,7 @@ Change board settings in `Tools`  section on the top of Arduini IDE.
 * `Burn Toolfirmware`: just for Maix Go Board, default `open-ec`
 * `Burn Baudrate`: Decrease it if download fail
 * `Port`: Serial port, e.g. `/dev/ttyUSB0`
-* `Programmer`: Burn tool, must select `k-flash`
+* **`Programmer`**: Burn tool, you **MUST** select **`k-flash`**
 
 ![](../../assets/arduino_board.png)
 
