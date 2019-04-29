@@ -70,30 +70,6 @@ Change board settings in `Tools`  section on the top of Arduini IDE.
 
 Then double click pack to install
 
-### Install dependence 
-
-(We will remove this step in the future~ but now we have to do this step!)
-
-* Add toolchain path to global environment path:
-
-Find your toolchain path, it should be like this:
-
-```
-C:\Users\(username)\AppData\Local\Arduino15\packages\Maixduino\tools\riscv64-unknown-elf-gcc\8.2.0\bin
-```
-
-The username is your PC user's name
-
-
-Open search tool, type in `env`, and choose `Edit the system environment variables` -> selet `Environment Variables` -> selct `Path` in `System variables` section -> Selct`New` -> copy your toolchain path -> click OK  to confirm
-
-![](../../assets/win10_search.png)
-
-![](../../assets/win10_search_env.png)
-
-![](../../assets/win10_edit_env.png)
-
-![](../../assets/win10_add_env_path.png)
 
 ### Add board in Arduino IDE
 
