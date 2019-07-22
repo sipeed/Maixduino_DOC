@@ -1,4 +1,4 @@
-MaixPy 文档
+Maixduino 文档
 ======
 
 <div class="title_pic">
