@@ -16,3 +16,10 @@ Maixduino makes the Arduino IDE and libraries support the Maix series of develop
 
 Instructions to install Maixduino in the Arduino IDE can be found [here](./get_started/install.md)
 
+## Use PlatformIO IDE
+
+
+You can get more powerful support through PlatformIO IDE. See [more](https://docs.platformio.org/en/latest/platforms/kendryte210.html)
+
+![PIO IDE Debug](../assets/piodebug.png)
+
