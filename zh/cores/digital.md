@@ -90,7 +90,8 @@ void loop() {
   delay(1000);            // waits for a second
 }
 ```
-Sets pin 13 to the same value as pin 16, declared as an input.
+
+将引脚13设置为与引脚16相同的值，声明为输入。
 
 ```
 int ledPin = 13;  // LED connected to digital pin 13
