@@ -3,7 +3,7 @@ Summary
 
 ## 简介
 
-- [关于MaixPy](README.md)
+- [关于Maixduino](README.md)
 
 ## 准备
 
