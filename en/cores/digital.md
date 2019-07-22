@@ -99,7 +99,7 @@ Sets pin 13 to the same value as pin 16, declared as an input.
 
 ```
 int ledPin = 13;  // LED connected to digital pin 13
-int inPin = 16;    // pushbutton connected to digital pin 7
+int inPin = 16;    // pushbutton connected to digital pin 16
 int val = 0;      // variable to store the read value
 
 void setup() {
