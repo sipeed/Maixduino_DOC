@@ -3,7 +3,7 @@ Analog I/O
 
 Maixduino uses the pwm module of the K210 chip to implement the analogWrite() function. The analogRead() function is temporarily unavailable.
 
-In Maixduino, you can configure up to 12 pins in any 48 FPIOs to Analog Output.
+In Maixduino, you can configure up to 12 pins of the 48 FPIOs to be Analog Output.
 
 ----
 ## analogWrite()
