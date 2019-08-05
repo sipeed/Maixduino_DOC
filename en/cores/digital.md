@@ -2,9 +2,9 @@ Digital I/O
 =====
 
 
-Maixduino supports basic arduino input and output functions, you can use them like other arduino boards.
+Maixduino supports basic arduino input and output functions. You can use them like other arduino boards.
 
-In Maixduino, you can configure up to 32 pins into any digital IO in any of the 48 FPIOs.
+In Maixduino, you can configure up to 32 pins into digital IO using any of the 48 FPIOs.
 
 -----
 ## digitalRead()

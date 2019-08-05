@@ -46,7 +46,7 @@ Select `Tools` -> `Board` -> `Boards Manager`， search for `Maixduino`, select 
 
 ### Change settings about board
 
-Change board settings in `Tools`  section on the top of Arduini IDE.
+Change board settings in `Tools`  section on the top of Arduino IDE.
 
 * `Board`: Choose your dev board
 * `Burn Tool Firmware`: just for Maix Go Board, default `open-ec`
@@ -79,11 +79,11 @@ Open Arduino IDE, select `File` -> `Preferences`,
 
 Add `Additional Boards Manager URLs`: 
 
-`http://dl.sipeed.com/MAIX/Maixduino/package_Maixduino_k210_index.json` (Recommend)
+`http://dl.sipeed.com/MAIX/Maixduino/package_Maixduino_k210_index.json` (Recommended)
 
 or 
 
-`http://dl.sipeed.com/MAIX/Maixduino/package_Maixduino_k210_dl_cdn_index.json` ( if download fail or speed too low, try this URL)
+`http://dl.sipeed.com/MAIX/Maixduino/package_Maixduino_k210_dl_cdn_index.json` (if download fails or the speed is too low, try this URL)
 
 
 ![](../../assets/arduino_settings.png)
@@ -99,11 +99,11 @@ Select `Tools` -> `Board` -> `Boards Manager`， search `Maixduino`, click `Inst
 
 ### Change settings about board
 
-Change board settings in `Tools`  section on the top of Arduini IDE.
+Change board settings in `Tools`  section on the top of Arduino IDE.
 
 * `Board`: The same as your dev board
 * `Burn Toolfirmware`: just for Maix Go Board, default `open-ec`
-* `Burn Baudrate`: Decrease it if download fail
+* `Burn Baudrate`: Decrease it if download fails
 * `Port`: Serial port, e.g. `/dev/ttyUSB0`
 * **`Programmer`**: Burn tool, you **MUST** select **`k-flash`**
 

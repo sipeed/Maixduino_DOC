@@ -3,7 +3,7 @@ Serial
 
 In Maixduino, there are two types of serial devices, `UARTHSClass` and `UARTClass`.
 The `Serial` corresponds to the `UARTHSClass`, and the remaining `Serial1`, `Serial2`, and `Serial3` are `UARTClass`. `Serial` uses the default pin as **4** (RX), **5** (TX).
-So you can use it in the serial monitor on your computer.The default pins for the other three global serial ports are **6**(RX),**7**(TX) (they are connected to the WiFi module),To use them correctly, set different pins for them in `begin()`.
+So you can use it in the serial monitor on your computer.The default pins for the other three global serial ports are **6**(RX), and **7**(TX) (they are connected to the WiFi module),To use them correctly, set different pins for them in `begin()`.
 
 ## Functions
 
