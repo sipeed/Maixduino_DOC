@@ -1,10 +1,10 @@
-Powerful Maix Board(k210) Can Do
+What The Powerful Maix Board(k210) Can Do
 ===========
 
-Most of them integrated to MaixPy, or some of them include in [Maixduino](https://Maixduino.sipeed.com) or from other developers
+Most of these examples integrate MaixPy, and some of them use [Maixduino](https://Maixduino.sipeed.com) or code from other developers
 
 
-* draw picture Turorial
+* Draw picture tutorial
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/el6CB-h9Lo0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -22,7 +22,7 @@ Most of them integrated to MaixPy, or some of them include in [Maixduino](https:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BGctumZuhao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-* NES gamer emulator
+* NES game emulator
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y7-hM2UHuNw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

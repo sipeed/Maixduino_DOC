@@ -1,7 +1,7 @@
-Board
+Boards
 =======
 
-there's three kind of board as follow:
+There are three boards as follows:
 
 * Dan dock with Sipeed M1(Dan) module
 
