@@ -51,27 +51,20 @@ Nothing
 
 Passing the PWM duty cycle may not result in significant accuracy variations.
 
-### Example Code
+### Example Code for Maix BiT, Maix Dan Dock, Maix Go
 ```
-#include <Arduino.h>
-
-// constants:
-// LED_BLUE = 12;
-// LED_GREEN = LED_BUILTIN = 13;
-// LED_RED = 14;
-
 void setup()
 {
-  pinMode(LED_BLUE, OUTPUT);
-  pinMode(LED_GREEN, OUTPUT);
-  pinMode(LED_RED, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(14, OUTPUT);
 }
 
-void setColor(int red,int green,int blue)
+void setColor(int red, int green, int blue)
 {
-  analogWrite(LED_BLUE, 255-blue);
-  analogWrite(LED_GREEN, 255-green);
-  analogWrite(LED_RED, 255-red);
+  analogWrite(12, 255-blue);
+  analogWrite(13, 255-green);
+  analogWrite(14, 255-red);
 }
 
 void loop()
@@ -96,6 +89,29 @@ void loop()
     setColor(0, i, j);
     delay(4);
     j--;
+  }
+  delay(100);        
+}
+```
+
+### Example Code for Maixduino
+```
+void setup()
+{
+  pinMode(1, OUTPUT);
+}
+
+void setColor(int value)
+{
+  analogWrite(1, 255-value);
+}
+
+void loop()
+{
+  int i, j;
+  for (i=0; i<256; i++)
+  {
+    setColor(i);
   }
   delay(100);        
 }
