@@ -63,9 +63,9 @@ Maixduino 可以在 48 个自由引脚中最多选择 12 个设置模拟输出�
 ### 示例代码 Maix BiT, Maix Dan Dock, Maix Go
 
 ```
-int led1 = 12; // PIN_LED_BLUE
-int led2 = 13; // PIN_LED_GREEN or LED_BUILTIN
-int led3 = 14; // PIN_LED_RED
+int led1 = 12; // LED_BLUE
+int led2 = 13; // LED_GREEN | LED_BUILTIN
+int led3 = 14; // LED_RED
 
 void setup()
 {
