@@ -51,7 +51,7 @@ Nothing
 
 Passing the PWM duty cycle may not result in significant accuracy variations.
 
-### Example Code for Maix BiT, Maix Dan Dock, Maix Go
+### Example Code for Maix Bit, Maix Dock, Maix Go
 ```
 int led1 = 12; // LED_BLUE
 int led2 = 13; // LED_GREEN | LED_BUILTIN
