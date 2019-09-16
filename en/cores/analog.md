@@ -114,7 +114,7 @@ void setColor(int value)
 
 void loop()
 {
-  int i, j;
+  int i;
   for (i=0; i<256; i++)
   {
     setColor(i);
