@@ -118,6 +118,7 @@ void loop()
   for (i=0; i<256; i++)
   {
     setColor(i);
+    delay(4);
   }
   delay(100);        
 }
