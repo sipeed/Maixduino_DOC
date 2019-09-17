@@ -60,45 +60,76 @@ Maixduino 可以在 48 个自由引脚中最多选择 12 个设置模拟输出�
 
 ### 示例代码
 
+### 示例代码 Maix Bit, Maix Dock, Maix Go
+
 ```
-int led1 = 12;
-int led2 = 13;
-int led3 = 14;
+int led1 = 12; // LED_BLUE
+int led2 = 13; // LED_GREEN | LED_BUILTIN
+int led3 = 14; // LED_RED
 
 void setup()
 {
-  pinMode(led1,OUTPUT);
-  pinMode(led2,OUTPUT);
-  pinMode(led3,OUTPUT);
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
 }
-void setColor(int red,int green,int blue)
+
+void setColor(int red, int green, int blue)
 {
-  analogWrite(led1,255-red);
-  analogWrite(led2,255-green);
-  analogWrite(led3,255-blue);
+  analogWrite(led1, 255-blue);
+  analogWrite(led2, 255-green);
+  analogWrite(led3, 255-red);
 }
+
 void loop()
 {
-  int i,j;
-  for(i=0,j=255;i<256;i++)
+  int i, j;
+  for (i=0, j=255; i<256; i++)
   {
-    setColor(i,j,0);
+    setColor(i, j, 0);
     delay(4);
     j--;
   }
   delay(100);           
-  for(i=0,j=255;i<256;i++)
+  for (i=0, j=255; i<256; i++)
   {
-    setColor(j,0,i);
+    setColor(j, 0, i);
     delay(4);
     j--;
   }
   delay(100);           
-  for(i=0,j=255;i<256;i++)
+  for (i=0, j=255; i<256; i++)
   {
-    setColor(0,i,j);
+    setColor(0, i, j);
     delay(4);
     j--;
+  }
+  delay(100);        
+}
+```
+
+### 示例代码 Maixduino
+
+```
+int led1 = 1; // LED_BUILTIN
+
+void setup()
+{
+  pinMode(led1, OUTPUT);
+}
+
+void setColor(int value)
+{
+  analogWrite(led1, 255-value);
+}
+
+void loop()
+{
+  int i;
+  for (i=0; i<256; i++)
+  {
+    setColor(i);
+    delay(4);
   }
   delay(100);        
 }
