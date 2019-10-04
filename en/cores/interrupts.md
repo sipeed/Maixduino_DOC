@@ -50,10 +50,107 @@ Nothing
 byte keys[] = {15, 16, 17};
 #define NUMKEYS sizeof(keys)
 volatile byte pressed[NUMKEYS];
-
-// Debounce
 byte keyState[NUMKEYS];
 byte lastKeyState[NUMKEYS];
+
+void keyPressChange()
+{
+  pressed[0] = !pressed[0];
+}
+
+void keyDownChange()
+{
+  pressed[1] = !pressed[1];
+}
+
+void keyUpChange()
+{
+  pressed[2] = !pressed[2];
+}
+
+void setup()
+{
+  for (byte i = 0; i < NUMKEYS; ++i)
+  {
+    pressed[i] = HIGH;
+    keyState[i] = HIGH;
+    lastKeyState[i] = HIGH;
+  }
+
+  Serial.begin(115200);
+
+  attachInterrupt(keys[0], keyPressChange, CHANGE);
+  attachInterrupt(keys[1], keyDownChange, CHANGE);
+  attachInterrupt(keys[2], keyUpChange, CHANGE);
+}
+
+void loop()
+{
+  for (byte i = 0; i < NUMKEYS; ++i)
+  {
+    // if the button state has changed:
+    if (pressed[i] != keyState[i])
+    {
+      keyState[i] = pressed[i];
+
+      // when a key is pressed
+      if (keyState[i] == LOW)
+      {
+        switch (i)
+        {
+        case 0:
+          Serial.println("pressed key is pressing");
+          break;
+
+        case 1:
+          Serial.println("down key is pressing");
+          break;
+
+        case 2:
+          Serial.println("up key is pressing");
+          break;
+        }
+      } else {
+        // when a key is released
+        switch (i)
+        {
+        case 0:
+          Serial.println("pressed key is released");
+          break;
+
+        case 1:
+          Serial.println("down key is released");
+          break;
+
+        case 2:
+          Serial.println("up key is released");
+          break;
+        }
+      }
+    }
+    
+    lastKeyState[i] = pressed[i];
+  }
+}
+```
+
+###  Example Code with debounce
+```
+#include <Arduino.h>
+
+// constants
+// PIN_KEY_PRESS = KEY0 = 15
+// PIN_KEY_DOWN         = 16
+// PIN_KEY_UP           = 17
+
+// Key
+byte keys[] = {15, 16, 17};
+#define NUMKEYS sizeof(keys)
+volatile byte pressed[NUMKEYS];
+byte keyState[NUMKEYS];
+byte lastKeyState[NUMKEYS];
+
+// Debounce
 unsigned long lastDebounceTime[NUMKEYS];  // the last time the output pin was toggled
 unsigned long debounceDelay = 50;         // the debounce time; increase if the output flickers
 
@@ -76,9 +173,9 @@ void setup()
 {
   for (byte i = 0; i < NUMKEYS; ++i)
   {
-    pressed[i] = LOW;
-    keyState[i] = LOW;
-    lastKeyState[i] = LOW;
+    pressed[i] = HIGH;
+    keyState[i] = HIGH;
+    lastKeyState[i] = HIGH;
     lastDebounceTime[i] = 0;
   }
 
@@ -110,7 +207,7 @@ void loop()
       {
         keyState[i] = pressed[i];
 
-        // react only when a key is pressed
+        // react only when a key is released
         if (keyState[i] == HIGH)
         {
           switch (i)
