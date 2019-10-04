@@ -50,7 +50,7 @@ byte keyState = HIGH;
 
 void keyPressChange()
 {
-  pressed[0] = !pressed[0];
+  pressed = !pressed;
 }
 
 void setup()
