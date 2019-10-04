@@ -105,3 +105,13 @@ void loop()
   delay(2000);
 }
 ```
+
+----
+
+## Serial Monitor in `platform.io`
+```
+-- Available ports:
+---  1: /dev/ttyUSB0         'USB Debugger'
+---  2: /dev/ttyUSB1         'USB Debugger'
+--- Enter port index or full name: 2
+```
