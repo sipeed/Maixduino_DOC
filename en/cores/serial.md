@@ -51,7 +51,57 @@ The operation of the serial port is exactly the same as that of Arduino. You can
 
 `serialEvent()`
 
+----
 ## Serial port settings
 
 Serial.begin(BaudRate, RX , TX )
 
+### Notes
+
+For `platform.io` change the serial monitor baudrate in `platform.ini`.
+
+```
+; serial monitor baudrate
+monitor_speed = 115200
+```
+
+----
+## Serial.println()
+
+### Description
+
+Prints data to the serial port as human-readable ASCII text followed by a carriage return character (ASCII 13, or '\r') and a newline character (ASCII 10, or '\n'). This command takes the same forms as `Serial.print()`.
+
+### Syntax
+
+`Serial.println(val)`
+
+`Serial.println(val, format)`
+
+### Parameters
+
+`Serial`: serial port object.
+
+`val`: the value to print. Allowed data types: any data type.
+
+`format`: specifies the number base (for integral data types) or number of decimal places (for floating point types).
+
+### Returns
+
+`println()` returns the number of bytes written, though reading that number is optional. Data type: `size_t`.
+
+### Example Code
+```
+#include <Arduino.h>
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  Serial.println("Hello world");
+  delay(2000);
+}
+```
