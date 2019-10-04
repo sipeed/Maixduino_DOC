@@ -43,93 +43,38 @@ Nothing
 
 // constants
 // PIN_KEY_PRESS = KEY0 = 15
-// PIN_KEY_DOWN         = 16
-// PIN_KEY_UP           = 17
 
 // Key
-byte keys[] = {15, 16, 17};
-#define NUMKEYS sizeof(keys)
-volatile byte pressed[NUMKEYS];
-byte keyState[NUMKEYS];
-byte lastKeyState[NUMKEYS];
+volatile byte pressed = HIGH;
+byte keyState = HIGH;
 
 void keyPressChange()
 {
   pressed[0] = !pressed[0];
 }
 
-void keyDownChange()
-{
-  pressed[1] = !pressed[1];
-}
-
-void keyUpChange()
-{
-  pressed[2] = !pressed[2];
-}
-
 void setup()
 {
-  for (byte i = 0; i < NUMKEYS; ++i)
-  {
-    pressed[i] = HIGH;
-    keyState[i] = HIGH;
-    lastKeyState[i] = HIGH;
-  }
-
   Serial.begin(115200);
 
-  attachInterrupt(keys[0], keyPressChange, CHANGE);
-  attachInterrupt(keys[1], keyDownChange, CHANGE);
-  attachInterrupt(keys[2], keyUpChange, CHANGE);
+  attachInterrupt(15, keyPressChange, CHANGE);
 }
 
 void loop()
 {
-  for (byte i = 0; i < NUMKEYS; ++i)
+  // if the button state has changed:
+  if (pressed != keyState)
   {
-    // if the button state has changed:
-    if (pressed[i] != keyState[i])
-    {
-      keyState[i] = pressed[i];
+    keyState = pressed;
 
-      // when a key is pressing
-      if (keyState[i] == LOW)
-      {
-        switch (i)
-        {
-        case 0:
-          Serial.println("pressed key is pressing");
-          break;
+    Serial.print("pressed key ");
 
-        case 1:
-          Serial.println("down key is pressing");
-          break;
-
-        case 2:
-          Serial.println("up key is pressing");
-          break;
-        }
-      } else {
-        // when a key is released
-        switch (i)
-        {
-        case 0:
-          Serial.println("pressed key is released");
-          break;
-
-        case 1:
-          Serial.println("down key is released");
-          break;
-
-        case 2:
-          Serial.println("up key is released");
-          break;
-        }
-      }
+    boolean isPressing = (keyState == LOW);
+    if (isPressing) {
+      Serial.println("is pressing");
+    } else {
+      Serial.println("is pressed");
     }
-    
-    lastKeyState[i] = pressed[i];
   }
 }
 ```
