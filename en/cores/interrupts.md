@@ -93,7 +93,7 @@ void loop()
     {
       keyState[i] = pressed[i];
 
-      // when a key is pressed
+      // when a key is pressing
       if (keyState[i] == LOW)
       {
         switch (i)
