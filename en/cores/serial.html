@@ -1,0 +1,961 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Serial · Maixduino DOC</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="sipeed">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-title/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="time.html" />
+    
+    
+    <link rel="prev" href="interrupts.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+    <nav role="navigation" class="autoshow">
+        <ul class="summary">
+        <li><a href="https://www.sipeed.com" class="btn" target="_blank"><img src="/assets/icon_sipeed2.png" height="30" /></a></li>
+        <li><a href="#" class="btn" onclick="toggleLanguage()">中文</a></li>
+        
+        
+        <li class="version-link">
+            <a href="#" class="btn" style="color:#444"></i>Version: <span style="font-weight: bold; display: inline"><i class='fa fa-angle-down'></i></span></a>
+            <ul class="hovershow">
+                
+                <li><a href="/en/" class="btn">Version: <span style="font-weight:bold; display: inline">master</span></a></li>
+                
+                <li><a href="/dev/en/" class="btn">Version: <span style="font-weight:bold; display: inline">dev</span></a></li>
+                
+            </ul>
+        </li>                
+        
+                 
+        
+        
+        <li><a href="http://blog.sipeed.com" class="btn" target="_blank"><i></i>Blog</a></li>
+        
+    
+        
+        <li><a href="https://bbs.sipeed.com/" class="btn" target="_blank"><i></i>BBS</a></li>
+        
+    
+        
+        <li>
+            <a href="#" class="btn"><i ></i>Feedback</a>
+            <ul>
+                
+                <li><a href="https://github.com/sipeed/Maixduino_DOC/issues" class="btn" target="_blank">doc</a></li>
+                
+                <li><a href="https://github.com/sipeed/Maixduino/issues" class="btn" target="_blank">code</a></li>
+                
+            </ul>
+        </li>                
+        
+          
+        </ul>
+    </nav>
+    
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Introduction</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../others/what_maix_do.html">
+            
+                <a href="../others/what_maix_do.html">
+            
+                    
+                    What Maix Can Do
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hardware</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../hardware/k210.html">
+            
+                <a href="../hardware/k210.html">
+            
+                    
+                    K210
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../hardware/module.html">
+            
+                <a href="../hardware/module.html">
+            
+                    
+                    Module
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../hardware/m1.html">
+            
+                <a href="../hardware/m1.html">
+            
+                    
+                    Sipeed M1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../hardware/board.html">
+            
+                <a href="../hardware/board.html">
+            
+                    
+                    Board
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../hardware/dan_dock.html">
+            
+                <a href="../hardware/dan_dock.html">
+            
+                    
+                    Dan Dock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../hardware/bit.html">
+            
+                <a href="../hardware/bit.html">
+            
+                    
+                    BiT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../hardware/go.html">
+            
+                <a href="../hardware/go.html">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../hardware/peripheral_modules.html">
+            
+                <a href="../hardware/peripheral_modules.html">
+            
+                    
+                    Peripheral Modules
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../hardware/binocular.html">
+            
+                <a href="../hardware/binocular.html">
+            
+                    
+                    Binocular camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../hardware/lcd.html">
+            
+                <a href="../hardware/lcd.html">
+            
+                    
+                    LCD Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../hardware/mic_array.html">
+            
+                <a href="../hardware/mic_array.html">
+            
+                    
+                    Microphone array
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Prepare</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../get_started/get_hardware.html">
+            
+                <a href="../get_started/get_hardware.html">
+            
+                    
+                    Get Hardware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../get_started/install.html">
+            
+                <a href="../get_started/install.html">
+            
+                    
+                    Install
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Base Functions</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="analog.html">
+            
+                <a href="analog.html">
+            
+                    
+                    Analog I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="advanced.html">
+            
+                <a href="advanced.html">
+            
+                    
+                    Advanced I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="constants.html">
+            
+                <a href="constants.html">
+            
+                    
+                    Constants
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="digital.html">
+            
+                <a href="digital.html">
+            
+                    
+                    Digital I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="interrupts.html">
+            
+                <a href="interrupts.html">
+            
+                    
+                    Interrupts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.6" data-path="serial.html">
+            
+                <a href="serial.html">
+            
+                    
+                    Serial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="time.html">
+            
+                <a href="time.html">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Libraries</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../libs/camera.md">
+            
+                <span>
+            
+                    
+                    Camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../libs/littlevgl.md">
+            
+                <span>
+            
+                    
+                    LittlevGL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../libs/maix_kpu.md">
+            
+                <span>
+            
+                    
+                    Maix_KPU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../libs/speechrecg.md">
+            
+                <span>
+            
+                    
+                    Maix_Speech_Recognition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../libs/msa300.html">
+            
+                <a href="../libs/msa300.html">
+            
+                    
+                    MSA300 Accelerometer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../libs/ns2009.html">
+            
+                <a href="../libs/ns2009.html">
+            
+                    
+                    NS2009 Touchscreen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../libs/sd.md">
+            
+                <span>
+            
+                    
+                    SD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="../libs/sipeed_ov2640.html">
+            
+                <a href="../libs/sipeed_ov2640.html">
+            
+                    
+                    Sipeed_OV2640 Camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="../libs/sipeed_st7789.html">
+            
+                <a href="../libs/sipeed_st7789.html">
+            
+                    
+                    Sipeed_ST7789 Display
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="../libs/spi.html">
+            
+                <a href="../libs/spi.html">
+            
+                    
+                    SPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="../libs/ticker.md">
+            
+                <span>
+            
+                    
+                    Ticker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="../libs/wifiesp.md">
+            
+                <span>
+            
+                    
+                    WiFiEsp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="../libs/wire.md">
+            
+                <span>
+            
+                    
+                    Wire
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Others</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../contribute/">
+            
+                <a href="../contribute/">
+            
+                    
+                    Contribute
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../contribute/doc_convention.html">
+            
+                <a href="../contribute/doc_convention.html">
+            
+                    
+                    Documentation convention
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../contribute/code_convention.html">
+            
+                <a href="../contribute/code_convention.html">
+            
+                    
+                    Code convention
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="sipeed-navbar navbar-collapse" id="navbar" role="navigation">
+    <ul class="nav navbar-nav">
+        <li><a href="https://www.sipeed.com" class="btn" target="_blank"><img src="/assets/icon_sipeed2.png" height="30" /></a></li>
+        <li><a href="#" class="btn autohide" onclick="toggleLanguage()">中文</a></li>
+
+    
+    <li><a href="http://blog.sipeed.com" class="btn autohide" target="_blank"><i ></i>Blog</a></li>
+    
+
+    
+    <li><a href="https://bbs.sipeed.com/" class="btn autohide" target="_blank"><i ></i>BBS</a></li>
+    
+
+    
+    <li>
+        <a href="#" class="btn autohide"><i ></i>Feedback</a>
+        <ul class="hovershow">
+            
+            <li><a href="https://github.com/sipeed/Maixduino_DOC/issues" class="btn" target="_blank">doc</a></li>
+            
+            <li><a href="https://github.com/sipeed/Maixduino/issues" class="btn" target="_blank">code</a></li>
+            
+        </ul>
+    </li>                
+    
+    
+
+    
+    <li class="version-link">
+        <a class="btn">Version <span style="font-weight:bold"><i class='fa fa-angle-down'></i></span></a>
+        <ul class="hovershow">
+            
+            <li><a href="/en/" class="btn">Version: <span style="font-weight:bold">master</span></a></li>
+            
+            <li><a href="/dev/en/" class="btn">Version: <span style="font-weight:bold">dev</span></a></li>
+            
+        </ul>
+    </li>                
+    
+   
+    </ul>
+</div>
+<div class="book-header" role="navigation">
+    
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Serial</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#serial"><b> </b>Serial</a></li><ul><li><span class="title-icon "></span><a href="#functions"><b>1. </b>Functions</a></li><li><span class="title-icon "></span><a href="#serial-port-settings"><b>2. </b>Serial port settings</a></li><ul><li><span class="title-icon "></span><a href="#notes"><b>2.1. </b>Notes</a></li></ul><li><span class="title-icon "></span><a href="#serialprintln"><b>3. </b>Serial.println()</a></li><ul><li><span class="title-icon "></span><a href="#description"><b>3.1. </b>Description</a></li><li><span class="title-icon "></span><a href="#syntax"><b>3.2. </b>Syntax</a></li><li><span class="title-icon "></span><a href="#parameters"><b>3.3. </b>Parameters</a></li><li><span class="title-icon "></span><a href="#returns"><b>3.4. </b>Returns</a></li><li><span class="title-icon "></span><a href="#example-code"><b>3.5. </b>Example Code</a></li></ul><li><span class="title-icon "></span><a href="#serial-monitor-in-platformio"><b>4. </b>Serial Monitor in platform.io</a></li></ul></ul></div><a href="#serial" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="serial"><a name="serial" class="anchor-navigation-ex-anchor" href="#serial"><i class="fa fa-link" aria-hidden="true"></i></a> Serial</h1>
+<p>In Maixduino, there are two types of serial devices, <code>UARTHSClass</code> and <code>UARTClass</code>.
+The <code>Serial</code> corresponds to the <code>UARTHSClass</code>, and the remaining <code>Serial1</code>, <code>Serial2</code>, and <code>Serial3</code> are <code>UARTClass</code>. <code>Serial</code> uses the default pin as <strong>4</strong> (RX), <strong>5</strong> (TX).
+So you can use it in the serial monitor on your computer.The default pins for the other three global serial ports are <strong>6</strong>(RX), and <strong>7</strong>(TX) (they are connected to the WiFi module),To use them correctly, set different pins for them in <code>begin()</code>.</p>
+<h2 id="functions"><a name="functions" class="anchor-navigation-ex-anchor" href="#functions"><i class="fa fa-link" aria-hidden="true"></i></a>1. Functions</h2>
+<p>The operation of the serial port is exactly the same as that of Arduino. You can find more information on the <a href="https://www.arduino.cc/reference/en/language/functions/communication/serial/" target="_blank">Arduino website</a>.</p>
+<p><code>if(Serial)</code></p>
+<p><code>available()</code></p>
+<p><code>availableForWrite()</code></p>
+<p><code>begin()</code></p>
+<p><code>end()</code></p>
+<p><code>find()</code></p>
+<p><code>findUntil()</code></p>
+<p><code>flush()</code></p>
+<p><code>parseFloat()</code></p>
+<p><code>parseInt()</code></p>
+<p><code>peek()</code></p>
+<p><code>print()</code></p>
+<p><code>println()</code></p>
+<p><code>read()</code></p>
+<p><code>readBytes()</code></p>
+<p><code>readBytesUntil()</code></p>
+<p><code>readString()</code></p>
+<p><code>readStringUntil()</code></p>
+<p><code>setTimeout()</code></p>
+<p><code>write()</code></p>
+<p><code>serialEvent()</code></p>
+<hr>
+<h2 id="serial-port-settings"><a name="serial-port-settings" class="anchor-navigation-ex-anchor" href="#serial-port-settings"><i class="fa fa-link" aria-hidden="true"></i></a>2. Serial port settings</h2>
+<p>Serial.begin(BaudRate, RX , TX )</p>
+<h3 id="notes"><a name="notes" class="anchor-navigation-ex-anchor" href="#notes"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Notes</h3>
+<p>For <code>platform.io</code> change the serial monitor baudrate in <code>platform.ini</code>.</p>
+<pre><code>; serial monitor baudrate
+monitor_speed = 115200
+</code></pre><hr>
+<h2 id="serialprintln"><a name="serialprintln" class="anchor-navigation-ex-anchor" href="#serialprintln"><i class="fa fa-link" aria-hidden="true"></i></a>3. Serial.println()</h2>
+<h3 id="description"><a name="description" class="anchor-navigation-ex-anchor" href="#description"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. Description</h3>
+<p>Prints data to the serial port as human-readable ASCII text followed by a carriage return character (ASCII 13, or &apos;\r&apos;) and a newline character (ASCII 10, or &apos;\n&apos;). This command takes the same forms as <code>Serial.print()</code>.</p>
+<h3 id="syntax"><a name="syntax" class="anchor-navigation-ex-anchor" href="#syntax"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. Syntax</h3>
+<p><code>Serial.println(val)</code></p>
+<p><code>Serial.println(val, format)</code></p>
+<h3 id="parameters"><a name="parameters" class="anchor-navigation-ex-anchor" href="#parameters"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. Parameters</h3>
+<p><code>Serial</code>: serial port object.</p>
+<p><code>val</code>: the value to print. Allowed data types: any data type.</p>
+<p><code>format</code>: specifies the number base (for integral data types) or number of decimal places (for floating point types).</p>
+<h3 id="returns"><a name="returns" class="anchor-navigation-ex-anchor" href="#returns"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. Returns</h3>
+<p><code>println()</code> returns the number of bytes written, though reading that number is optional. Data type: <code>size_t</code>.</p>
+<h3 id="example-code"><a name="example-code" class="anchor-navigation-ex-anchor" href="#example-code"><i class="fa fa-link" aria-hidden="true"></i></a>3.5. Example Code</h3>
+<pre><code>#include &lt;Arduino.h&gt;
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  Serial.println(&quot;Hello world&quot;);
+  delay(2000);
+}
+</code></pre><hr>
+<h2 id="serial-monitor-in-platformio"><a name="serial-monitor-in-platformio" class="anchor-navigation-ex-anchor" href="#serial-monitor-in-platformio"><i class="fa fa-link" aria-hidden="true"></i></a>4. Serial Monitor in platform.io</h2>
+<pre><code>-- Available ports:
+---  1: /dev/ttyUSB0         &apos;USB Debugger&apos;
+---  2: /dev/ttyUSB1         &apos;USB Debugger&apos;
+--- Enter port index or full name: 2
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="interrupts.html" class="navigation navigation-prev " aria-label="Previous page: Interrupts">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="time.html" class="navigation navigation-next " aria-label="Next page: Time">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Serial","level":"4.6","depth":1,"next":{"title":"Time","level":"4.7","depth":1,"path":"cores/time.md","ref":"cores/time.md","articles":[]},"previous":{"title":"Interrupts","level":"4.5","depth":1,"path":"cores/interrupts.md","ref":"cores/interrupts.md","articles":[]},"dir":"ltr"},"config":{"plugins":["my-toolbar","-lunr","-search","search-title","anchor-navigation-ex","anchorjs","sharing","splitter","edit-link","ga","expandable-chapters-small@git+https://github.com/sipeed/gitbook-plugin-expandable-chapters-small.git"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/sipeed/Maixduino"},"splitter":{},"search":{"maxIndexSize":1000000000},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"theme":"white","family":"sans","size":2},"search-title":{},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-angle-double-right","level2Icon":"fa fa-angle-double-right","level3Icon":"fa fa-angle-double-right","showLevelIcon":true},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-chapters-small":{},"my-toolbar":{"buttons":[{"label":"Github","text":" ","icon":"fa fa-github","position":"left","target":"_blank","url":"https://github.com/sipeed/Maixduino"}]},"ga":{"configuration":"auto","token":"UA-119047820-3"},"sharing":{"qq":false,"all":["weibo","facebook","google","twitter","vk"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"edit-link":{"label":"","base":"https://github.com/sipeed/Maixduino_DOC/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","author":"sipeed","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"items":[{"name":"Blog","link":"http://blog.sipeed.com"},{"name":"BBS","link":"https://bbs.sipeed.com/"},{"name":"Feedback","links":[{"name":"doc","link":"https://github.com/sipeed/Maixduino_DOC/issues"},{"name":"code","link":"https://github.com/sipeed/Maixduino/issues"}]}],"version":[{"name":"<i class='fa fa-angle-down'></i>","links":[{"name":"master","link":"/en/"},{"name":"dev","link":"/dev/en/"}]}]},"title":"Maixduino DOC","language":"en","gitbook":"*","description":"Maixduino documentation"},"file":{"path":"cores/serial.md","mtime":"2020-07-16T02:31:40.627Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-16T02:32:40.724Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-my-toolbar/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script type="text/javascript">
+    function toggleLanguage () {
+            var path = location.href;
+            // console.log(path);
+            if (path.indexOf('/zh') !== -1) {
+                path = path.replace(/\/zh[\/$\s]/i, '/en/');
+            } else if (path.indexOf('/en') !== -1) {
+                path = path.replace(/\/en[\/$\s]/i, '/zh/');
+            }
+            // console.log('after: ' + path);    
+            location.assign(path);
+    }
+    </script>
+
+    </body>
+</html>
+

@@ -1,0 +1,784 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>数字 I/O · Maixduino 文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="sipeed">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-title/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="analog.html" />
+    
+    
+    <link rel="prev" href="../get_started/install.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+    <nav role="navigation" class="autoshow">
+        <ul class="summary">
+        <li><a href="https://www.sipeed.com" class="btn" target="_blank"><img src="/assets/icon_sipeed2.png" height="30" /></a></li>
+        <li><a href="#" class="btn" onclick="toggleLanguage()">English</a></li>        
+        
+        
+        <li class="version-link">
+            <a href="#" class="btn" style="color:#444"></i>Version: <span style="font-weight: bold; display: inline"><i class='fa fa-angle-down'></i></span></a>
+            <ul class="hovershow">
+                
+                <li><a href="/zh/" class="btn">Version: <span style="font-weight:bold; display: inline">master</span></a></li>
+                
+                <li><a href="/dev/zh/" class="btn">Version: <span style="font-weight:bold; display: inline">dev</span></a></li>
+                
+            </ul>
+        </li>                
+        
+                 
+        
+        
+        <li><a href="http://blog.sipeed.com" class="btn"><i ></i>博客</a></li>
+        
+    
+        
+        <li><a href="https://bbs.sipeed.com/" class="btn"><i ></i>论坛</a></li>
+        
+    
+        
+        <li>
+            <a href="#" class="btn"><i ></i>反馈</a>
+            <ul>
+                
+                <li><a href="https://github.com/sipeed/Maixduino_DOC/issues" class="btn">文档</a></li>
+                
+                <li><a href="https://github.com/sipeed/Maixduino/issues" class="btn">源码</a></li>
+                
+            </ul>
+        </li>                
+        
+          
+        </ul>
+    </nav>
+    
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于Maixduino
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">准备</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../get_started/get_hardware.html">
+            
+                <a href="../get_started/get_hardware.html">
+            
+                    
+                    获得开发板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../get_started/install.html">
+            
+                <a href="../get_started/install.html">
+            
+                    
+                    安装开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基础功能</li>
+        
+        
+    
+        <li class="chapter active" data-level="3.1" data-path="digital.html">
+            
+                <a href="digital.html">
+            
+                    
+                    数字 I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="analog.html">
+            
+                <a href="analog.html">
+            
+                    
+                    模拟 I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="advanced.html">
+            
+                <a href="advanced.html">
+            
+                    
+                    高级 I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="time.html">
+            
+                <a href="time.html">
+            
+                    
+                    时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="interrupts.html">
+            
+                <a href="interrupts.html">
+            
+                    
+                    中断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="serial.html">
+            
+                <a href="serial.html">
+            
+                    
+                    串口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="constants.html">
+            
+                <a href="constants.html">
+            
+                    
+                    常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">库</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../libs/camera.html">
+            
+                <a href="../libs/camera.html">
+            
+                    
+                    Camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../libs/littlevgl.html">
+            
+                <a href="../libs/littlevgl.html">
+            
+                    
+                    LittlevGL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../libs/maix_kpu.html">
+            
+                <a href="../libs/maix_kpu.html">
+            
+                    
+                    Maix_KPU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../libs/speechrecg.html">
+            
+                <a href="../libs/speechrecg.html">
+            
+                    
+                    Maix_Speech_Recognition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../libs/msa300.html">
+            
+                <a href="../libs/msa300.html">
+            
+                    
+                    MSA300 Accelerometer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../libs/ns2009.html">
+            
+                <a href="../libs/ns2009.html">
+            
+                    
+                    NS2009 Touchscreen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../libs/sd.html">
+            
+                <a href="../libs/sd.html">
+            
+                    
+                    SD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../libs/sipeed_ov2640.html">
+            
+                <a href="../libs/sipeed_ov2640.html">
+            
+                    
+                    Sipeed_OV2640 Camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../libs/sipeed_st7789.html">
+            
+                <a href="../libs/sipeed_st7789.html">
+            
+                    
+                    Sipeed_ST7789 Display
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../libs/spi.html">
+            
+                <a href="../libs/spi.html">
+            
+                    
+                    SPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../libs/ticker.html">
+            
+                <a href="../libs/ticker.html">
+            
+                    
+                    Ticker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../libs/wifiesp.html">
+            
+                <a href="../libs/wifiesp.html">
+            
+                    
+                    WiFiEsp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../libs/wire.html">
+            
+                <a href="../libs/wire.html">
+            
+                    
+                    Wire
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其它</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../contribute/">
+            
+                <a href="../contribute/">
+            
+                    
+                    贡献
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../contribute/doc_convention.html">
+            
+                <a href="../contribute/doc_convention.html">
+            
+                    
+                    文档风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../contribute/code_convention.html">
+            
+                <a href="../contribute/code_convention.html">
+            
+                    
+                    代码风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="sipeed-navbar navbar-collapse" id="navbar" role="navigation">
+    <ul class="nav navbar-nav">
+        <li><a href="https://www.sipeed.com" class="btn" target="_blank"><img src="/assets/icon_sipeed2.png" height="30" /></a></li>
+        <li><a href="#" class="btn autohide" onclick="toggleLanguage()">English</a></li>           
+
+    
+    <li><a href="http://blog.sipeed.com" class="btn autohide" target="_blank"><i ></i>博客</a></li>
+    
+
+    
+    <li><a href="https://bbs.sipeed.com/" class="btn autohide" target="_blank"><i ></i>论坛</a></li>
+    
+
+    
+    <li>
+        <a href="#" class="btn autohide"><i ></i>反馈</a>
+        <ul class="hovershow">
+            
+            <li><a href="https://github.com/sipeed/Maixduino_DOC/issues" class="btn" target="_blank">文档</a></li>
+            
+            <li><a href="https://github.com/sipeed/Maixduino/issues" class="btn" target="_blank">源码</a></li>
+            
+        </ul>
+    </li>                
+    
+    
+
+    
+    <li class="version-link">
+        <a class="btn" >版本 <span style="font-weight:bold"><i class='fa fa-angle-down'></i></span></a>
+        <ul class="hovershow">
+            
+            <li><a href="/zh/" class="btn">版本: <span style="font-weight:bold">master</span></a></li>
+            
+            <li><a href="/dev/zh/" class="btn">版本: <span style="font-weight:bold">dev</span></a></li>
+            
+        </ul>
+    </li>                
+    
+   
+    </ul>
+</div>
+<div class="book-header" role="navigation">
+    
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >数字 I/O</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6570;&#x5B57;-io"><b> </b>&#x6570;&#x5B57; I/O</a></li><ul><li><span class="title-icon "></span><a href="#digitalread"><b>1. </b>digitalRead()</a></li><ul><li><span class="title-icon "></span><a href="#&#x63CF;&#x8FF0;"><b>1.1. </b>&#x63CF;&#x8FF0;</a></li><li><span class="title-icon "></span><a href="#&#x7528;&#x6CD5;"><b>1.2. </b>&#x7528;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x6570;"><b>1.3. </b>&#x53C2;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;"><b>1.4. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><b>1.5. </b>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</a></li></ul><li><span class="title-icon "></span><a href="#digitalwrite"><b>2. </b>digitalWrite()</a></li><ul><li><span class="title-icon "></span><a href="#&#x63CF;&#x8FF0;_1"><b>2.1. </b>&#x63CF;&#x8FF0;</a></li><li><span class="title-icon "></span><a href="#&#x7528;&#x6CD5;_1"><b>2.2. </b>&#x7528;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x6570;_1"><b>2.3. </b>&#x53C2;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_1"><b>2.4. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;_1"><b>2.5. </b>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</a></li></ul><li><span class="title-icon "></span><a href="#pinmode"><b>3. </b>pinMode()</a></li><ul><li><span class="title-icon "></span><a href="#&#x63CF;&#x8FF0;_2"><b>3.1. </b>&#x63CF;&#x8FF0;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x6570;_2"><b>3.2. </b>&#x53C2;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_2"><b>3.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;_2"><b>3.4. </b>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</a></li><li><span class="title-icon "></span><a href="#&#x793A;&#x4F8B;&#x4EE3;&#x7801;"><b>3.5. </b>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</a></li></ul></ul></ul></div><a href="#&#x6570;&#x5B57;-io" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6570;&#x5B57;-io"><a name="&#x6570;&#x5B57;-io" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x5B57;-io"><i class="fa fa-link" aria-hidden="true"></i></a> &#x6570;&#x5B57; I/O</h1>
+<p>Maixduino &#x652F;&#x6301;&#x57FA;&#x672C;&#x7684; Arduino &#x8F93;&#x5165;&#x8F93;&#x51FA;&#x51FD;&#x6570;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x50CF;&#x4F7F;&#x7528;&#x5176;&#x4ED6; Arduino &#x5F00;&#x53D1;&#x677F;&#x4E00;&#x6837;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x3002;</p>
+<ul>
+<li>Maixduino &#x53EF;&#x4EE5;&#x81EA;&#x7531;&#x64CD;&#x4F5C;&#x4E0D;&#x8D85;&#x8FC7; 32 &#x4E2A;&#x6570;&#x5B57; IO &#x53E3;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x5C06;&#x5B83;&#x4EEC;&#x540C;&#x65F6;&#x6620;&#x5C04;&#x5230; 48 &#x4E2A; FPIO &#x4E0A;&#x3002;</li>
+</ul>
+<h2 id="digitalread"><a name="digitalread" class="anchor-navigation-ex-anchor" href="#digitalread"><i class="fa fa-link" aria-hidden="true"></i></a>1. digitalRead()</h2>
+<h3 id="&#x63CF;&#x8FF0;"><a name="&#x63CF;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#&#x63CF;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x63CF;&#x8FF0;</h3>
+<pre><code>&#x4ECE;&#x9009;&#x5B9A;&#x7684; IO &#x5F15;&#x811A;&#x8BFB;&#x53D6;&#x7535;&#x5E73;, `HIGH`&#x6216;&#x8005;`LOW`.
+</code></pre><h3 id="&#x7528;&#x6CD5;"><a name="&#x7528;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x7528;&#x6CD5;</h3>
+<p><code>digitalRead(pin)</code></p>
+<h3 id="&#x53C2;&#x6570;"><a name="&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x53C2;&#x6570;</h3>
+<p><code>pin</code> : &#x4F60;&#x8981;&#x8BFB;&#x53D6;&#x7684;&#x6570;&#x5B57; IO &#x5F15;&#x811A;&#x3002;&#xFF08;0 - 47&#xFF0C; Maixduino board &#x4E3A; 0 - 13*&#xFF09;</p>
+<h3 id="&#x8FD4;&#x56DE;&#x503C;"><a name="&#x8FD4;&#x56DE;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x8FD4;&#x56DE;&#x503C;</h3>
+<p><code>HIGH</code> &#x6216;&#x8005; <code>LOW</code></p>
+<h3 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a name="&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3>
+<ul>
+<li>&#x53EA;&#x6709;&#x5728; <code>pinMode()</code> &#x521D;&#x59CB;&#x5316;&#x540E;&#x7684;&#x5F15;&#x811A;&#x624D;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x3002;</li>
+<li>* Maixduino board &#x4E0A;&#x7684; SDA SCL &#x53EF;&#x4F5C;&#x4E3A;&#x666E;&#x901A;&#x6570;&#x5B57;&#x5F15;&#x811A; 14 15 &#x53F7;&#x4F7F;&#x7528;&#xFF0C;BOOT key &#x4F5C;&#x4E3A; 16 &#x53F7;&#x5F15;&#x811A;&#x4F7F;&#x7528;&#x3002;</li>
+</ul>
+<hr>
+<h2 id="digitalwrite"><a name="digitalwrite" class="anchor-navigation-ex-anchor" href="#digitalwrite"><i class="fa fa-link" aria-hidden="true"></i></a>2. digitalWrite()</h2>
+<h3 id="&#x63CF;&#x8FF0;_1"><a name="&#x63CF;&#x8FF0;_1" class="anchor-navigation-ex-anchor" href="#&#x63CF;&#x8FF0;_1"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. &#x63CF;&#x8FF0;</h3>
+<p>&#x5C06;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x5F15;&#x811A;&#x8BBE;&#x7F6E;&#x4E3A;&#x9AD8;&#x7535;&#x5E73;&#x6216;&#x8005;&#x4F4E;&#x7535;&#x5E73;&#x3002;</p>
+<h3 id="&#x7528;&#x6CD5;_1"><a name="&#x7528;&#x6CD5;_1" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x6CD5;_1"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. &#x7528;&#x6CD5;</h3>
+<p><code>digitalWrite(pin, value)</code></p>
+<h3 id="&#x53C2;&#x6570;_1"><a name="&#x53C2;&#x6570;_1" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x6570;_1"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. &#x53C2;&#x6570;</h3>
+<p><code>pin</code>: &#x5F15;&#x811A;&#x53F7;</p>
+<p><code>value</code>: <code>HIGH</code> &#x6216;&#x8005; <code>LOW</code></p>
+<h3 id="&#x8FD4;&#x56DE;&#x503C;_1"><a name="&#x8FD4;&#x56DE;&#x503C;_1" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_1"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. &#x8FD4;&#x56DE;&#x503C;</h3>
+<p>&#x65E0;</p>
+<h3 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;_1"><a name="&#x6CE8;&#x610F;&#x4E8B;&#x9879;_1" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;_1"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. &#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3>
+<ul>
+<li>&#x53EA;&#x6709;&#x5728; <code>pinMode()</code> &#x521D;&#x59CB;&#x5316;&#x540E;&#x7684;&#x5F15;&#x811A;&#x624D;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x72B6;&#x6001;&#x3002;</li>
+</ul>
+<hr>
+<h2 id="pinmode"><a name="pinmode" class="anchor-navigation-ex-anchor" href="#pinmode"><i class="fa fa-link" aria-hidden="true"></i></a>3. pinMode()</h2>
+<h3 id="&#x63CF;&#x8FF0;_2"><a name="&#x63CF;&#x8FF0;_2" class="anchor-navigation-ex-anchor" href="#&#x63CF;&#x8FF0;_2"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x63CF;&#x8FF0;</h3>
+<p>&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5F15;&#x811A;&#x4E3A;&#x8F93;&#x5165;&#x6216;&#x8F93;&#x51FA;&#x6A21;&#x5F0F;&#x3002;</p>
+<h3 id="&#x53C2;&#x6570;_2"><a name="&#x53C2;&#x6570;_2" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x6570;_2"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x53C2;&#x6570;</h3>
+<p><code>pin</code>: &#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x5F15;&#x811A;</p>
+<p><code>mode</code>: <code>INPUT</code>, <code>OUTPUT</code>, <code>INPUT_PULLDOWN</code> &#x6216;&#x8005; <code>INPUT_PULLUP</code>. </p>
+<h3 id="&#x8FD4;&#x56DE;&#x503C;_2"><a name="&#x8FD4;&#x56DE;&#x503C;_2" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_2"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. &#x8FD4;&#x56DE;&#x503C;</h3>
+<p>&#x65E0;</p>
+<h3 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;_2"><a name="&#x6CE8;&#x610F;&#x4E8B;&#x9879;_2" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;_2"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. &#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3>
+<p>&#x5728;&#x4F7F;&#x7528; <code>digitalRead()</code> &#x6216;&#x8005; <code>digitalWrite()</code> &#x524D;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x5316;&#x5BF9;&#x5E94;&#x5F15;&#x811A;&#x3002;</p>
+<h3 id="&#x793A;&#x4F8B;&#x4EE3;&#x7801;"><a name="&#x793A;&#x4F8B;&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x793A;&#x4F8B;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>3.5. &#x793A;&#x4F8B;&#x4EE3;&#x7801;</h3>
+<pre><code>void setup() {
+  pinMode(13, OUTPUT);    // sets the digital pin 13 as output
+}
+
+void loop() {
+  digitalWrite(13, HIGH); // sets the digital pin 13 on
+  delay(1000);            // waits for a second
+  digitalWrite(13, LOW);  // sets the digital pin 13 off
+  delay(1000);            // waits for a second
+}
+</code></pre><p>&#x5C06;&#x5F15;&#x811A;13&#x8BBE;&#x7F6E;&#x4E3A;&#x4E0E;&#x5F15;&#x811A;16&#x76F8;&#x540C;&#x7684;&#x503C;&#xFF0C;&#x58F0;&#x660E;&#x4E3A;&#x8F93;&#x5165;&#x3002;</p>
+<pre><code>int ledPin = 13;  // LED connected to digital pin 13
+int inPin = 16;    // pushbutton connected to digital pin 16
+int val = 0;      // variable to store the read value
+
+void setup() {
+  pinMode(ledPin, OUTPUT);  // sets the digital pin 13 as output
+  pinMode(inPin, INPUT);    // sets the digital pin 16 as input
+}
+
+void loop() {
+  val = digitalRead(inPin);   // read the input pin
+  digitalWrite(ledPin, val);  // sets the LED to the button&apos;s value
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../get_started/install.html" class="navigation navigation-prev " aria-label="Previous page: 安装开发环境">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="analog.html" class="navigation navigation-next " aria-label="Next page: 模拟 I/O">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"数字 I/O","level":"3.1","depth":1,"next":{"title":"模拟 I/O","level":"3.2","depth":1,"path":"cores/analog.md","ref":"cores/analog.md","articles":[]},"previous":{"title":"安装开发环境","level":"2.2","depth":1,"path":"get_started/install.md","ref":"get_started/install.md","articles":[]},"dir":"ltr"},"config":{"plugins":["my-toolbar","-lunr","-search","search-title","anchor-navigation-ex","anchorjs","sharing","splitter","edit-link","ga","expandable-chapters-small@git+https://github.com/sipeed/gitbook-plugin-expandable-chapters-small.git"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/sipeed/Maixduino"},"splitter":{},"search":{"maxIndexSize":1000000000},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"theme":"white","family":"sans","size":2},"search-title":{},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-angle-double-right","level2Icon":"fa fa-angle-double-right","level3Icon":"fa fa-angle-double-right","showLevelIcon":true},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-chapters-small":{},"my-toolbar":{"buttons":[{"label":"Github","text":" ","icon":"fa fa-github","position":"left","target":"_blank","url":"https://github.com/sipeed/Maixduino"}]},"ga":{"configuration":"auto","token":"UA-119047820-3"},"sharing":{"qq":false,"all":["weibo","facebook","google","twitter","vk"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"edit-link":{"label":"","base":"https://github.com/sipeed/Maixduino_DOC/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","author":"sipeed","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"items":[{"name":"博客","link":"http://blog.sipeed.com"},{"name":"论坛","link":"https://bbs.sipeed.com/"},{"name":"反馈","links":[{"name":"文档","link":"https://github.com/sipeed/Maixduino_DOC/issues"},{"name":"源码","link":"https://github.com/sipeed/Maixduino/issues"}]}],"version":[{"name":"<i class='fa fa-angle-down'></i>","links":[{"name":"master","link":"/zh/"},{"name":"dev","link":"/dev/zh/"}]}]},"title":"Maixduino 文档","language":"zh-hans","gitbook":"*","description":"Maixduino 文档"},"file":{"path":"cores/digital.md","mtime":"2020-07-16T02:31:40.627Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-16T02:32:40.724Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-my-toolbar/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script type="text/javascript">
+    function toggleLanguage () {
+            var path = location.href;
+            // console.log(path);
+            if (path.indexOf('/zh') !== -1) {
+                path = path.replace(/\/zh[\/$\s]/i, '/en/');
+            } else if (path.indexOf('/en') !== -1) {
+                path = path.replace(/\/en[\/$\s]/i, '/zh/');
+            }
+            // console.log('after: ' + path);    
+            location.assign(path);
+    }
+    </script>
+
+    </body>
+</html>
+
