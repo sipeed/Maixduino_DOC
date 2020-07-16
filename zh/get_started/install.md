@@ -1,6 +1,8 @@
 安装 Arduino 环境
 ================
 
+! 请使用**最新版本**的 Arduino IDE, 旧版本 IDE 无法解析 HTTP301，导致无法正确下载开发板元信息。 
+
 ## Linux
 
 ### 下载 Arduino IDE
